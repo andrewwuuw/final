@@ -8,7 +8,7 @@ end
 gem 'cancancan', '~> 2.0'
 gem 'devise'
 gem 'simple_form'
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'nokogiri', '~> 1.8', '>= 1.8.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
