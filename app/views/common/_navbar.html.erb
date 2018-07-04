@@ -12,15 +12,15 @@
           <li><%= link_to("登入", new_user_session_path , class:"nav-link", style:"color: rgb(243,241,113)" ) %></li>
         <% else %>
         <div>
-          <a href="#" style="color: rgb(243,241,113);">
+          <a  style="color: rgb(243,241,113);">
             Hi!, <%= current_user.name %>
-            <b class="caret"></b>
           </a>
+          <a class="ml-1 mr-1">|</a>
           <ul>
-            <li><%= link_to("我的討論版", account_groups_path) %></li>
-            <li><%= link_to("我的文章", account_posts_path) %></li>
-            <li><%= link_to("帳號設定", edit_user_registration_path) %></li>
-            <li><%= link_to("登出", destroy_user_session_path, method: "delete") %></li>
+            <li><%= link_to("我的討論版", account_groups_path, style:"color: rgb(243,241,113);") %></li>
+            <li><%= link_to("我的文章", account_posts_path, style:"color: rgb(243,241,113);") %></li>
+            <li><%= link_to("帳號設定", edit_user_registration_path , style:"color: rgb(243,241,113);") %></li>
+            <li><%= link_to("登出", destroy_user_session_path,style:"color: rgb(170,170,170);", method: "delete") %></li>
           </ul>
         </div>
         <% end %>

@@ -17,7 +17,7 @@
 
 body,html{
   background-color: #000;
-  color: rgb(255,255,255);
+  color: rgb(170,170,170);
 }
 h2{
   color: rgb(255,255,255);
@@ -42,7 +42,11 @@ ul {
     color: rgb(243,241,113);
     text-decoration:none;
   }
-  :hover li{
-    text-decoration:none;
-  }
+}
+
+a:hover{
+  text-decoration:none;
+}
+ul li:hover{
+  color: #fff;
 }
