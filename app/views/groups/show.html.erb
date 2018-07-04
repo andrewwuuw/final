@@ -1,8 +1,8 @@
 <div class="col-md-12">
   <div class="group">
-    <%= link_to("New Post", new_group_post_path(@group), class: "btn btn-warning pull-right") %>
+    <%= link_to("新增文章", new_group_post_path(@group), class: "btn btn-warning pull-right") %>
     <% if can? :update, @group  %>
-      <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary pull-right")%>
+      <%= link_to("編輯討論版", edit_group_path(@group), class: "btn btn-primary pull-right")%>
     <% end %>
 
     <% if current_user.present? %>
@@ -13,6 +13,7 @@
       <% end %>
     <% end %>
   </div>
+  <br>
   <h2><%= @group.title %></h2>
   <p><%= @group.description %></p>
 
@@ -21,7 +22,7 @@
       <tr>
         <th>文章</th>
         <th>留言者</th>
-        <th>功能</th>
+        <th>＊</th>
       </tr>
     </thead>
     <tbody>

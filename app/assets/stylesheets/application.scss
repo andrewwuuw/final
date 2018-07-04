@@ -33,6 +33,7 @@ h2{
   padding: 0px;
   border-radius: 0px;
 }
+
 ul {
   display: inline-block;
   list-style: none;
@@ -47,6 +48,25 @@ ul {
 a:hover{
   text-decoration:none;
 }
+
 ul li:hover{
   color: #fff;
+}
+
+li.nav_a{
+  a{
+    color: rgb(243,241,113);
+  }
+  a:hover{
+    color: white;
+  }
+}
+
+li.nav_b{
+  a{
+    color: rgb(170, 170, 170);
+  }
+  a:hover{
+    color: white;
+  }
 }
