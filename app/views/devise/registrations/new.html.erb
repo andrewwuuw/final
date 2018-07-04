@@ -5,7 +5,7 @@
 
   <div class="form-inputs">
     <%= f.input :name, label:'帳號', required: true %>
-    <%= f.input :email, label:'信箱',required: true, autofocus: true %>
+    <%= f.input :email, label:'信箱', placeholder: 'user@gmail.com', required: true, autofocus: true %>
     <%= f.input :password, label:'密碼', required: true, hint: ("最小長度必須為 #{@minimum_password_length} 字元" if @minimum_password_length) %>
     <%= f.input :password_confirmation, label:'密碼確認', required: true %>
   </div>
