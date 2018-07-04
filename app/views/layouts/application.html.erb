@@ -10,8 +10,12 @@
 
   <body>
     <%= render "common/navbar" %>
-    <%= notice_message %>
-    <%= yield %>
+    <br/>
+    <div class="container">
+      <%= notice_message %>
+      <%= yield %>
+    </div>
+
   </body>
     <%= render "common/footer" %>
 </html>
