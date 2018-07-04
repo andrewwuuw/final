@@ -22,4 +22,7 @@
 
 .byebug_history
 
+Gemfile.lock
+db/schema.rb
 config/email.yml
+public/uploads/*
